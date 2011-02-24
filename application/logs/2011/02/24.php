@@ -81,6 +81,7 @@
 2011-02-24 02:41:25 --- ERROR: Database_Exception [ 0 ]: [1045] Access denied for user 'hybrideteam'@'74.198.164.89' (using password: YES) ~ MODPATH/database/classes/kohana/database/mysql.php [ 67 ]
 2011-02-24 02:42:02 --- ERROR: Database_Exception [ 0 ]: [1146] Table 'waqteamhybride.test' doesn't exist ( SELECT * FROM test ) ~ MODPATH/database/classes/kohana/database/mysql.php [ 181 ]
 2011-02-24 03:12:54 --- ERROR: Database_Exception [ 0 ]: [1054] Unknown column 'test' in 'field list' ( SELECT `test` ) ~ MODPATH/database/classes/kohana/database/mysql.php [ 181 ]
+<<<<<<< HEAD
 2011-02-24 06:04:56 --- ERROR: ErrorException [ 8 ]: Undefined variable: User ~ APPPATH/classes/controller/welcome.php [ 7 ]
 2011-02-24 06:05:18 --- ERROR: ErrorException [ 8 ]: Use of undefined constant User - assumed 'User' ~ APPPATH/classes/controller/welcome.php [ 7 ]
 2011-02-24 06:05:21 --- ERROR: ErrorException [ 8 ]: Use of undefined constant User - assumed 'User' ~ APPPATH/classes/controller/welcome.php [ 7 ]
@@ -138,3 +139,16 @@
 2011-02-24 14:27:37 --- ERROR: ErrorException [ 1 ]: Cannot access protected property Database_Exception::$code ~ APPPATH/classes/user.php [ 35 ]
 2011-02-24 14:28:19 --- ERROR: ErrorException [ 8 ]: Undefined variable: results ~ APPPATH/classes/user.php [ 40 ]
 2011-02-24 14:29:27 --- ERROR: ErrorException [ 8 ]: Undefined property: Database_Exception::$getCode ~ APPPATH/classes/user.php [ 35 ]
+=======
+2011-02-24 08:15:13 --- ERROR: Kohana_View_Exception [ 0 ]: The requested view home.php could not be found ~ SYSPATH/classes/kohana/view.php [ 268 ]
+2011-02-24 08:54:44 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL home/index was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
+2011-02-24 08:55:17 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL search/index was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
+2011-02-24 08:55:32 --- ERROR: Kohana_View_Exception [ 0 ]: The requested view home.php could not be found ~ SYSPATH/classes/kohana/view.php [ 268 ]
+2011-02-24 13:11:42 --- ERROR: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: syntax error in subpattern name (missing terminator) at offset 10 ~ SYSPATH/classes/kohana/route.php [ 385 ]
+2011-02-24 13:51:57 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
+2011-02-24 13:52:16 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
+2011-02-24 13:52:57 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
+2011-02-24 13:52:59 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
+2011-02-24 13:53:06 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/index was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
+2011-02-24 13:53:14 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
+>>>>>>> 2c489d016440fcf1e3b68549cf23dc6a692a153d
