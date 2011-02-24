@@ -1,0 +1,15 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2011-02-24 00:08:52 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/libs/modernizr-1.7.min.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:08:52 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/style.css ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:08:53 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/plugins.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:08:53 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/script.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:34:51 --- ERROR: ErrorException [ 1 ]: Call to undefined method Kohana::base() ~ APPPATH/views/layout.php [ 33 ]
+2011-02-24 00:38:03 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/style.css ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:38:03 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/libs/modernizr-1.7.min.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:38:03 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/script.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:38:03 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/plugins.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:38:44 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/script.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:38:44 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/plugins.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:45:32 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/plugins.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
+2011-02-24 00:45:32 --- ERROR: Http_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/script.js ~ SYSPATH/classes/kohana/request.php [ 733 ]
