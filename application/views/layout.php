@@ -23,6 +23,10 @@
 
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="<?php echo Kohana::$base_url; ?>public/css/reset.css?v=2">
+  <link rel="stylesheet" href="<?php echo Kohana::$base_url; ?>public/css/form-structure.css?v=2">
+  <link rel="stylesheet" href="<?php echo Kohana::$base_url; ?>public/css/form-style.css?v=2">
+  <link rel="stylesheet" href="<?php echo Kohana::$base_url; ?>public/css/layout.css?v=2">
+
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="<?php echo Kohana::$base_url; ?>public/css/handheld.css?v=2">  -->
@@ -36,9 +40,19 @@
 
   <div id="container">
     <header>
-
+		<ul id="nav">
+			<li>
+			    <a href="#">navigation 1</a>
+			</li>
+			<li>
+			    <a href="#">navigation 2</a>
+			</li>
+			<li>
+			    <a href="#">navigation 3</a>
+			</li>
+		</ul>
     </header>
-    <div id="main" role="main">
+    <div id="content">
     	<?php echo $content; ?>
     </div>
     <footer>
@@ -55,16 +69,9 @@
   
   
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="<?php echo Kohana::$base_url; ?>public/js/core.js"></script>
   <!-- end scripts-->
-  
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-  <![endif]-->
-
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
