@@ -308,8 +308,8 @@ class Kohana_Debug {
 			if ($line >= $range['start'])
 			{
 				// Make the row safe for output
-				$row = htmlspecialchars($row, ENT_NOQUOTES, Kohana::$charset);
-
+				//$row = htmlspecialchars($row, ENT_NOQUOTES, Kohana::$charset);
+				//$row	
 				// Trim whitespace and sanitize the row
 				$row = '<span class="number">'.sprintf($format, $line).'</span> '.$row;
 

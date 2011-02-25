@@ -17,8 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.png">
 
 
   <!-- CSS : implied media="all" -->
@@ -102,6 +101,9 @@
 				    <li>
 				        <a href="#">Les rivières</a>
 				    </li>
+					<li>
+				        <a href="#">La cité-limoilou</a>
+				    </li>
 				    <li>
 				        <a href="#">Charlesbourgh</a>
 				    </li>
@@ -112,22 +114,56 @@
 			</nav>
 		</div>
 			
-		<div id="midContent" class="withContent">
+		<div id="midContent">
 			<span class="yellowLine"></span>
-			<div id="eventResume" class="colLeft">
-				<h2 class="fontface">Festival d'été de st-jean-sur-richelieu</h2>
-				<p>avec une ligne d'information et <strong>un lien aussi</strong></p>
-				<a href="#" class="button red">Je partage ma voiture</a>
+			<div class="colLeft">
+				<?php if(!$home): ?>
+				<div id="eventResume">
+					<h2 class="fontface">Festival d'été de st-jean-sur-richelieu</h2>
+					<p>avec une ligne d'information et <strong>un lien aussi</strong></p>
+					<a href="#" class="button red">Je partage ma voiture</a>
+				</div>
+				<?php else: ?>
+					<h1 class="fontface">Çaroule <small>point&nbsp;ca</small></h1>
+				<?php endif; ?>
+			<div id="wrapAddTrack">
+				<h3 class="fontface">Partager une voiture</h3>
+				<a href="#" class="close">X</a>
+				<form action="" method="post" class="form" id="formAddtrack">
+					<div class="grid-12-12">
+						<label class="form-lbl" for="formAddtrack-courriel">Votre courriel</label>
+						<input type="text" name="courriel" value="" class="form-txt" id="formAddtrack-courriel" />
+					</div>
+					<div class="grid-12-12">
+						<label class="form-lbl" for="formAddtrack-motdepasse">Votre nom</label>
+						<input type="password" name="motdepasse" value="" class="form-txt" id="formAddtrack-motdepasse" />
+					</div>
+					<div class="grid-12-12">
+						<label class="form-lbl" for="formAddtrack-message">Votre message joint à l'annonce<br>(si vous voulez une compensation, dites-le!)</label>
+						<textarea name="message" id="formAddtrack-message" class="form-txt"></textarea>
+					</div>
+					
+					<a href="#" class="button red">Partager</a>
+				</form>
+				</div>
 			</div>
+			
 			<div class="colRight">
-				<h1 class="fontface">Coroule <small>point&nbsp;ca</small></h1>
+				<?php if(!$home): ?>
+					<h1 class="fontface">Çaroule <small>point&nbsp;ca</small></h1>
+				<?php else: ?>
+					<p class="intro">ÇaRoule.info, un projet qui a vu le jour lors de l’événement IronWeb 2011. </p>
+					<p class="intro last">Cinq passionnés du Web ont imaginé un service qui intensifie votre expérience du covoiturage en vous rapprochant de ceux qui partagent vos intérêts.</p>
+				<?php endif; ?>
 			</div>
 			
 		</div>
 		<form action="" method="post" class="form" id="searchEvent">
+			<?php if($home): ?>
 			<div class="form-left grid-max">
 				<input type="text" name="eventname" value="Recherche un événement" class="form-txt" />
 			</div>
+			<?php endif; ?>
 		</form>
     </header>
 

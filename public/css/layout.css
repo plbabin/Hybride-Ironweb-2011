@@ -173,12 +173,16 @@ header>form.sublogin input[type=submit]{
 }
 #midContent h1{
     font-size: 132px;
-    height:132px;
+    height:167px;
     line-height: 1em;
     color: #494949;
     text-transform:uppercase;
     font-weight: normal;
     float:left;
+    text-indent:-99999px;
+    width: 100%;
+    margin-top: 5px;
+    background:url(../images/logo.png) no-repeat center center;
 }
 #midContent h1 small{
     font-size:20px;
@@ -189,6 +193,7 @@ header>form.sublogin input[type=submit]{
     top:11px;
     width:487px;
     left:6%;
+    z-index:20;
 }
 #midContent .colRight{
     position:absolute;
@@ -230,11 +235,61 @@ header>form.sublogin input[type=submit]{
     position: absolute;
     right: -2px;
 }
+.showForm #wrapAddTrack{
+    display:block;
+}
+.showForm #eventResume a.button{display:none;}
+#wrapAddTrack{
+    background:url(../images/pale-yellow-noise.gif) repeat left top;
+    padding-bottom:45px;
+    position: relative;
+    display: none;
+}
+#wrapAddTrack .form-lbl{
+    color: #484848;
+    font-size: 15px;
+    margin-bottom:3px;
+}
+#wrapAddTrack form{
+    margin-left:42px;
+    margin-right:115px;
+}
+#wrapAddTrack .form-txt{
+    font-size: 15px;
+}
+#wrapAddTrack h3{
+    font-size: 40px;
+    color: #484848;
+    line-height: 1em;
+    padding-top:16px;
+    margin:0 0 20px 45px;
+}
+
+#wrapAddTrack a.button{
+    position:absolute;
+    right:-3px;
+    bottom:0;
+    width:107px;
+}
+
+#wrapAddTrack a.close{
+    display:block;
+    color: #a0a0a1;
+    position: absolute;
+    right:20px;
+    top:33px;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    font-size:20px;
+}
+
 
 #searchEvent{
     background-color: #b6b6b7;
     width:88%;
     padding:0 6%;
+    min-height:70px;
 }
 #searchEvent .form-left{
     margin-left: 0;
@@ -286,12 +341,13 @@ header>form.sublogin input[type=submit]{
     color: #494949;
     text-transform: uppercase;
 }
+
 #wrapMapContainer>nav a span{
     display: block;
     line-height: 18px;
     margin-top: 19px;
 }
-#wrapMapContainer>nav a:hover{
+#wrapMapContainer>nav a:hover, #wrapMapContainer>nav a.selected{
     background:#d6d6d6;
     text-decoration: none;
 }
@@ -316,7 +372,7 @@ header>form.sublogin input[type=submit]{
 
 
 #content{
-    padding:0 6% 50px 6%;
+    padding:0 6% 250px 6%;
     width:88%;
     background: url(../images/blue-noise.gif) repeat left top;
 }
@@ -340,11 +396,10 @@ header>form.sublogin input[type=submit]{
     padding: 0;
 }
 #feed li{
-    padding:30px 57px;
     background-color: #fff;
     border-bottom:1px solid #e5e5e5;
     position: relative;
-    
+    padding:30px 0;
 }
 
 #feed p{
@@ -353,6 +408,7 @@ header>form.sublogin input[type=submit]{
     font-size: 18px;
     font-weight: normal;
     margin-bottom:3px;
+    padding:0 57px;
 }
 
 #feed.event h4{
@@ -360,6 +416,8 @@ header>form.sublogin input[type=submit]{
     line-height: 1em;
     margin-bottom: 10px;
     font-weight: normal;
+    padding:0 57px;
+    text-transform: uppercase;
 }
 
 #feed.ride h4{
@@ -370,14 +428,67 @@ header>form.sublogin input[type=submit]{
     color: #b14b2c;
     text-transform:none;
     text-align: left;
+    padding:0 57px;
 }
 #feed.ride p.name{
     font-size:13px;
     margin-top:5px;
+    padding:0 57px;
 }
 #feed.ride a.button{
     position:absolute;
     right:-2px;
     bottom:0;
     z-index:10;
+}
+#feed .formContainer{
+    padding-bottom: 50px;
+    display: none;
+}
+#feed .formContainer form{
+    margin: 10px 50px 0 50px;
+}
+#feed .formContainer h3{
+    background-color: #e4e1da;
+    padding:19px 57px;
+    margin-top: 11px;
+    position:relative;
+    color: #494949;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#feed .formContainer h3 a{
+    position:absolute;
+    right:20px;
+    top:19px;
+    display:block;
+    color: #a0a0a1;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    font-size:20px;
+    font-family:"Trebuchet MS", arial, sans-serif;
+}
+#feed .formContainer .form-lbl{
+    color: #494949;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+#feed .formContainer.show a.button{
+    display:none;
+}
+
+/* HOME ONLY */
+div.colRight p.intro{
+    color: #969696;
+    font-size: 19px;
+}
+div.colRight p.intro{
+    margin-top:30px;
+    font-weight: normal;
+    line-height: 1.1em;
+}
+div.colRight p.intro.last{
+    margin-top:10px;
 }

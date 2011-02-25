@@ -119,46 +119,12 @@ Route::set('api','<directory>/<controller>/<action>',
 	    'controller' => 'user',
 	    'action'     => 'subscription',
 	));
-Route::set('user_inscription','usager/inscription')
+Route::set('show_events_track','evenement/<id>')
 	->defaults(array(
-	    'controller' => 'user',
-	    'action'     => 'subscription',
+	    'controller' => 'search',
+	    'action'     => 'event',
 	));
-Route::set('user_modifier','usager/<username>/modifier')
-	->defaults(array(
-	    'controller' => 'user',
-	    'action'     => 'editpage',
-	));
-Route::set('user','usager/<username>')
-	->defaults(array(
-	    'controller' => 'user',
-	    'action'     => 'publicpage',
-	));
-Route::set('pages_politiques','/politique-et-confidentialite')
-	->defaults(array(
-	    'controller' => 'pages',
-	    'action'     => 'politiques',
-	));
-Route::set('pages_termes','/termes-d-utilisation')
-	->defaults(array(
-	    'controller' => 'pages',
-	    'action'     => 'termes',
-	));
-Route::set('pages_apropos','/a-propos')
-	->defaults(array(
-	    'controller' => 'pages',
-	    'action'     => 'apropos',
-	));
-Route::set('pages_recompenses','/recompenses')
-	->defaults(array(
-	    'controller' => 'pages',
-	    'action'     => 'recompenses',
-	));
-Route::set('pages_soutenir','/soutenir')
-	->defaults(array(
-	    'controller' => 'pages',
-	    'action'     => 'soutenir',
-	));
+
 	
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of

@@ -17,8 +17,8 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			//'hostname'   => 'hybride.plbabin.com',
-			'hostname'   => 'localhost',
+			'hostname'   => 'hybride.plbabin.com',
+			//'hostname'   => 'localhost',
 			'database'   => 'waqteamhybride',
 			'username'   => 'hybrideteam',
 			'password'   => 'QW12er34',

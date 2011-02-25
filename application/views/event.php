@@ -25,11 +25,5 @@
 				</form>
 			</div>
 		</li>
-		<li>
-	        <h4 class="fontface"><a href="#">Nom de l'événement 1</a></h4>
-	        <p class="fontface">Date et lieu</p>
-	        <p class="fontface">Brève description et blablabla</p>
-
-	    </li>
 	</ul>
 </div>
