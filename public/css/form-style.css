@@ -51,20 +51,20 @@ Style
 	font-size:1.4em;
 }
 .form .form-txt, .form textarea, .form select {
-	border-color:#235485;
-	background: #fff;
-	color:#333;
-	font: normal 12px/1em arial, Verdana, "Trebuchet MS", Helvetica, sans-serif;
+	border-color:#cebe60;
+	background: #fbfbfb;
+	color:#484848;
+	font: normal 12px/1em "Trebuchet MS",arial, Verdana, Helvetica, sans-serif;
 }
 .form .form-txt:hover, .form textarea:hover, .form select:hover {
-	border-color:#235485;
+	border-color:#beaf59;
 	background: #fafafa;
-	color:#333;
+	color:#484848;
 }
 .form .form-txt:focus, .form textarea:focus, .form select:focus {
-	border-color:#103b66;
-	background: #f4fcff;
-	color:#235485;
+	border-color:#beaf59;
+	background: #fffef4;
+	color:#484848;
 }
 
 

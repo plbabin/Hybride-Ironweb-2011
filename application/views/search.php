@@ -1,16 +1,22 @@
-<div id="searchContainer">
-	<h1>Je carbure!</h1>
-	<form action="" method="post" class="form">
-		<fieldset>
-			<legend>Où voulez-vous aller?</legend>
-			<div class="grid-10-12">
-				<input type="text" name="destination" value="" class="form-txt" />
+<div id="feed" class="ride">
+	<h3 class="fontface">Offres des conducteurs</h3>
+	<ul>
+	    <li>
+			<h4>Beauport, nom de la rue</h4>
+			<p>Description de la ride.</p>
+			<p class="name">Pierre-Luc Babin</p>
+			
+			<a href="#" class="button embarque">J'embarque</a>
+			
+			<div class="formContainer">
+			
 			</div>
-			<div class="grid-2-12">
-				<input type="submit" name="dosearch" value="GO" class="form-button" />
-			</div>
-		</fieldset>
-	</form>
-	<span class="rightCorner"></span>
+		</li>
+		<li>
+	        <h4 class="fontface"><a href="#">Nom de l'événement 1</a></h4>
+	        <p class="fontface">Date et lieu</p>
+	        <p class="fontface">Brève description et blablabla</p>
+
+	    </li>
+	</ul>
 </div>
-<div id="mapContainer"></div>

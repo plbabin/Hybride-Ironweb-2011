@@ -36,25 +36,105 @@
 
 </head>
 
-<body lang="en" >
+<body lang="en" data-baseurl="<?php echo Kohana::$base_url;?>" >
+  	<header>
+		<nav>
+			<ul id="openSubLogBox">
+				<li>
+				    <a href="#" class="subscription">Inscription</a>
+				</li>
+				<li>
+				    <a href="#" class="login">Connexion</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<form id="formSubscription" action="" method="post" class="form sublogin">
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formSubscription-username">Nom d'usager <em class="form-req">*</em></label>
+				<input type="text" name="username" value="" class="form-txt" id="formLogin-username" />
+			</div>
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formSubscription-courriel">Courriel <em class="form-req">*</em></label>
+				<input type="text" name="courriel" value="" class="form-txt" id="formLogin-courriel" />
+			</div>
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formSubscription-motdepasse">Mot de passe <em class="form-req">*</em></label>
+				<input type="password" name="motdepasse" value="" class="form-txt" id="formLogin-motdepasse" />
+			</div>
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formSubscription-codepostal">Code postal</label>
+				<input type="password" name="codepostal" value="" class="form-txt" id="formLogin-codepostal" />
+			</div>
 
-  <div id="container">
-    <header>
-		<ul id="nav">
-			<li>
-			    <a href="#">navigation 1</a>
-			</li>
-			<li>
-			    <a href="#">navigation 2</a>
-			</li>
-			<li>
-			    <a href="#">navigation 3</a>
-			</li>
-		</ul>
+			<a href="#" class="button">Enregistrer</a>
+			<input type="submit" name="doLogin" value="Connexion" />
+		</form>
+		
+		<form id="formLogin" action="" method="post" class="form sublogin">
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formLogin-courriel">Courriel</label>
+				<input type="text" name="courriel" value="" class="form-txt" id="formLogin-courriel" />
+			</div>
+			<div class="grid-12-12">
+				<label class="form-lbl" for="formLogin-motdepasse">Mot de passe</label>
+				<input type="password" name="motdepasse" value="" class="form-txt" id="formLogin-motdepasse" />
+			</div>
+			<p class="grid-5-12">
+				<a href="#" class="forget">mot de passe oublié?</a>
+			</p>
+			<a href="#" class="button">Connexion</a>
+			<input type="submit" name="doLogin" value="Connexion" />
+		</form>
+		
+		<div id="wrapMapContainer">
+			<div id="mapContainer" data-eventid="10"></div>
+			<span class="greyShadow"></span>
+			
+			<nav>
+				<ul class="fontface">
+				    <li>
+				        <a href="#"><span>Sainte-Foy-Sillery<br>Cap-Rouge</span></a>
+				    </li>
+				    <li>
+				        <a href="#">La haute Sainte-Charles</a>
+				    </li>
+				    <li>
+				        <a href="#">Les rivières</a>
+				    </li>
+				    <li>
+				        <a href="#">Charlesbourgh</a>
+				    </li>
+				    <li>
+				        <a href="#">Beauport</a>
+				    </li>
+				</ul>
+			</nav>
+		</div>
+			
+		<div id="midContent" class="withContent">
+			<span class="yellowLine"></span>
+			<div id="eventResume" class="colLeft">
+				<h2 class="fontface">Festival d'été de st-jean-sur-richelieu</h2>
+				<p>avec une ligne d'information et <strong>un lien aussi</strong></p>
+				<a href="#" class="button red">Je partage ma voiture</a>
+			</div>
+			<div class="colRight">
+				<h1 class="fontface">Coroule <small>point&nbsp;ca</small></h1>
+			</div>
+			
+		</div>
+		<form action="" method="post" class="form" id="searchEvent">
+			<div class="form-left grid-max">
+				<input type="text" name="eventname" value="Recherche un événement" class="form-txt" />
+			</div>
+		</form>
     </header>
-    <div id="content">
+
+  <div id="content">
+
     	<?php echo $content; ?>
-    </div>
+
     <footer>
 
     </footer>

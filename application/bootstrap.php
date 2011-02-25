@@ -111,6 +111,14 @@ Kohana::modules(array(
 /**
  * All Site Routes
  */
+Route::set('api','<directory>/<controller>/<action>',
+        array(
+            'directory' => '(api)'
+        ))
+	->defaults(array(
+	    'controller' => 'user',
+	    'action'     => 'subscription',
+	));
 Route::set('user_inscription','usager/inscription')
 	->defaults(array(
 	    'controller' => 'user',

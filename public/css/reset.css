@@ -130,8 +130,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #3da3b8; color:#fff; text-shadow: none; }
-::selection { background:#3da3b8; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #187193; color:#fff; text-shadow: none; }
+::selection { background:#187193; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -157,10 +157,6 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
-
 
 
 /**

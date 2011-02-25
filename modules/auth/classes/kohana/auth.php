@@ -146,7 +146,7 @@ abstract class Kohana_Auth {
 	{
 		return $this->hash($password);
 	}
-
+    
 	/**
 	 * Perform a hmac hash, using the configured method.
 	 *
