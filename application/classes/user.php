@@ -4,7 +4,9 @@ class User {
 
 	public function select_all()
 	{
-	    $results = DB::query(Database::SELECT, "SELECT * FROM user")->execute();
+	    $results = DB::query(Database::SELECT, "SELECT * FROM user")
+	    	->execute();
+	    
 	    return $results;
 	}
 	
@@ -27,8 +29,7 @@ class User {
 	   		->param(':password', $params['password'])
 	   		->param(':gender', $params['gender'])
 	   		->param(':email', $params['email'])
-	   		->param(':alert_flag', $params['alert_flag'])->execute();
-	   		
+	   		->param(':alert_flag', $params['alert_flag'])->execute();	
     	}
 		catch (Exception $e)
 		{

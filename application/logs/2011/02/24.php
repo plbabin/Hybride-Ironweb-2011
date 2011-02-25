@@ -152,3 +152,6 @@
 2011-02-24 13:53:06 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/index was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
 2011-02-24 13:53:14 --- ERROR: Http_Exception_404 [ 404 ]: The requested URL usager/inscription was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 120 ]
 >>>>>>> 2c489d016440fcf1e3b68549cf23dc6a692a153d
+
+2011-02-24 21:48:13 --- ERROR: ErrorException [ 2 ]: Missing argument 1 for Origin::select(), called in /Applications/XAMPP/xamppfiles/htdocs/hybdride/application/classes/controller/welcome.php on line 11 and defined ~ APPPATH/classes/origin.php [ 14 ]
+2011-02-24 21:49:34 --- ERROR: ErrorException [ 8 ]: Undefined variable: id_event ~ APPPATH/classes/origin.php [ 17 ]
