@@ -32,7 +32,8 @@
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="<?php echo Kohana::$base_url; ?>public/js/libs/modernizr-1.7.min.js"></script>
-
+  
+  
 </head>
 
 <body lang="en" data-baseurl="<?php echo Kohana::$base_url;?>" >
@@ -119,8 +120,10 @@
 			<div class="colLeft">
 				<?php if(!$home): ?>
 				<div id="eventResume">
-					<h2 class="fontface">Festival d'été de st-jean-sur-richelieu</h2>
-					<p>avec une ligne d'information et <strong>un lien aussi</strong></p>
+					<a href="<?php echo Kohana::$base_url; ?>" class="back">Retour à l'accueil</a>
+					
+					<h2 class="fontface">Web à Québec (WAQ)</h2>
+					<p>Conférence web à Québec plus la compétition de fou Ironweb</p>
 					<a href="#" class="button red">Je partage ma voiture</a>
 				</div>
 				<?php else: ?>
@@ -170,10 +173,8 @@
   <div id="content">
 
     	<?php echo $content; ?>
-
-    <footer>
-
-    </footer>
+		
+		<div id="partenaires"></div>
   </div> <!--! end of #container -->
 
 

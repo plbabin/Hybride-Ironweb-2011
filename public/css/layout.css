@@ -182,7 +182,7 @@ header>form.sublogin input[type=submit]{
     text-indent:-99999px;
     width: 100%;
     margin-top: 5px;
-    background:url(../images/logo.png) no-repeat center center;
+    background:url(../images/logo_caroule.jpg) no-repeat center center;
 }
 #midContent h1 small{
     font-size:20px;
@@ -207,6 +207,11 @@ header>form.sublogin input[type=submit]{
     padding-top:24px;
     height:158px;
     background: url(../images/yellow-noise.gif) repeat left top;
+}
+#midContent #eventResume a.back{
+margin-bottom:5px;
+color:#b14b2c;
+display: block;
 }
 
 #eventResume h2{
@@ -374,6 +379,7 @@ header>form.sublogin input[type=submit]{
 #content{
     padding:0 6% 250px 6%;
     width:88%;
+    position:relative;
     background: url(../images/blue-noise.gif) repeat left top;
 }
 
@@ -491,4 +497,13 @@ div.colRight p.intro{
 }
 div.colRight p.intro.last{
     margin-top:10px;
+}
+
+div#partenaires{
+    background:url(../images/partenaires.jpg);
+    width: 276px;
+    height: 119px;
+    position:absolute;
+    right:15%;
+    top:5%;
 }

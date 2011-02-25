@@ -127,11 +127,22 @@ Map = {
         }
         
         Map.$container = $("#mapContainer");
-        
+        Map.$container.bind('click', function(){
+            $('html, body').animate({scrollTop:$('#feed').find('li:eq(10)').offset().top},500)
+        });
         Map.$obj = new google.maps.Map( Map.$container[0], myOptions);
         
         var styledMapType = new google.maps.StyledMapType([ { featureType: "all", elementType: "all", stylers: [ { saturation: -99 } ] } ]);
         Map.$obj.mapTypes.set('coroule', styledMapType);
+        
+        //map_event
+        LatLng = new google.maps.LatLng(46.814464,-71.224564);
+        marker = new google.maps.Marker({
+            map:Map.$obj,
+            draggable:false,
+            position: LatLng,
+            icon: '/jecarbure/public/images/map_event.png'
+          });
         
         //add event to fireup the app when everything is loaded
         google.maps.event.addListenerOnce(Map.$obj, 'tilesloaded', function(){
@@ -174,20 +185,27 @@ Map = {
     },
     parseData:function(data){
         Map.since = data.since;
-        Map.appendsMarkers(data.markers);
+        Map.appendsMarkers(data.points);
     },
-    appendsMarkers:function(markers){
-        for(var x=0;x<markers.length;x++){
-            var m = markers[x], 
+    appendsMarkers:function(points){
+        
+        for(var x=0;x<points.length;x++){
+            var m = points[x], 
                 LatLng = new google.maps.LatLng(m.lat,m.lng);
-            
+    
+            if(m.status == 'O'){
+                img = '/jecarbure/public/images/marker_open.png';
+            }else{
+                img = '/jecarbure/public/images/marker_close.png';
+            }    
             marker = new google.maps.Marker({
                 map:Map.$obj,
                 draggable:false,
-                position: LatLng
+                position: LatLng,
+                icon: '/jecarbure/public/images/marker_open.png'
               });
             
-            marker.trackid = m.id;
+            marker.trackid = m.id_track;
         }
     },
     clear:function(){

@@ -1,6 +1,7 @@
 <div id="feed" class="ride">
 	<h3 class="fontface">Offres des conducteurs</h3>
 	<ul>
+		<?php foreach($trackList as $track): ?>
 	    <li>
 			<h4>Beauport, nom de la rue</h4>
 			<p>Description de la ride.</p>
@@ -25,11 +26,6 @@
 				</form>
 			</div>
 		</li>
-		<li>
-	        <h4 class="fontface"><a href="#">Nom de l'événement 1</a></h4>
-	        <p class="fontface">Date et lieu</p>
-	        <p class="fontface">Brève description et blablabla</p>
-
-	    </li>
+		<?php endforeach; ?>
 	</ul>
 </div>
