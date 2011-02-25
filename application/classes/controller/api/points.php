@@ -35,7 +35,6 @@ class Controller_Api_Points extends Controller {
         //enlever 1 sec, nous on aimes la précision
         $datetime = time() - 60;
         $phpdate = date('Y-m-d H:i:s', $datetime );
-        print_r($phpdate);
         $tracklist = new Track;
         //appel la classe qui parle au modèle
         
