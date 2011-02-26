@@ -9,7 +9,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Ça roule, un projet réalisé lors du Ironweb 2011</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -106,7 +106,7 @@
 				        <a href="#">La cité-limoilou</a>
 				    </li>
 				    <li>
-				        <a href="#">Charlesbourgh</a>
+				        <a href="#">Charlesbourg</a>
 				    </li>
 				    <li>
 				        <a href="#">Beauport</a>
@@ -153,7 +153,7 @@
 			
 			<div class="colRight">
 				<?php if(!$home): ?>
-					<h1 class="fontface">Çaroule <small>point&nbsp;ca</small></h1>
+					<h1 class="fontface">Çaroule <small>point&nbsp;info</small></h1>
 				<?php else: ?>
 					<p class="intro">ÇaRoule.info, un projet qui a vu le jour lors de l’événement IronWeb 2011. </p>
 					<p class="intro last">Cinq passionnés du Web ont imaginé un service qui intensifie votre expérience du covoiturage en vous rapprochant de ceux qui partagent vos intérêts.</p>

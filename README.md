@@ -1,3 +1,3 @@
-# Kohana PHP Framework, version 3.1 (release)
+# Projet de l'équipe Hybride du Iron web 2011
 
-This is the current release version of [Kohana](http://kohanaframework.org/).
+Release final du projet.

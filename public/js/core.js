@@ -141,7 +141,7 @@ Map = {
             map:Map.$obj,
             draggable:false,
             position: LatLng,
-            icon: '/jecarbure/public/images/map_event.png'
+            icon: '/public/images/map_event.png'
           });
         
         //add event to fireup the app when everything is loaded
@@ -194,15 +194,15 @@ Map = {
                 LatLng = new google.maps.LatLng(m.lat,m.lng);
     
             if(m.status == 'O'){
-                img = '/jecarbure/public/images/marker_open.png';
+                img = '/public/images/marker_open.png';
             }else{
-                img = '/jecarbure/public/images/marker_close.png';
+                img = '/public/images/marker_close.png';
             }    
             marker = new google.maps.Marker({
                 map:Map.$obj,
                 draggable:false,
                 position: LatLng,
-                icon: '/jecarbure/public/images/marker_open.png'
+                icon: '/public/images/marker_open.png'
               });
             
             marker.trackid = m.id_track;
