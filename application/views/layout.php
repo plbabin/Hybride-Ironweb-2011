@@ -177,7 +177,7 @@
 		<div id="partenaires"></div>
   </div> <!--! end of #container -->
 
-  <footer><p>Ça roule.info, un projet réalisé lors du <a href="http://http://webaquebec.org/ironweb/">Iron web 2011</a></p>
+  <footer><p>Ça roule.info, un projet réalisé lors du <a href="http://webaquebec.org/ironweb/">Iron web 2011</a></p>
 	<p>
 	    <a href="http://twitter.com/plbabin">@plbabin</a>, <a href="http://twitter.com/Lalabadie">@Lalabadie</a>, <a href="http://twitter.com/Joaccroduweb">@Joaccroduweb</a> et <a href="http://twitter.com/MartinOuellet">@MartinOuellet</a>
 	</p></footer>
