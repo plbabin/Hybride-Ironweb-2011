@@ -377,7 +377,7 @@ display: block;
 
 
 #content{
-    padding:0 6% 250px 6%;
+    padding:0 6% 100px 6%;
     width:88%;
     position:relative;
     background: url(../images/blue-noise.gif) repeat left top;
@@ -506,4 +506,13 @@ div#partenaires{
     position:absolute;
     right:15%;
     top:5%;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background-color:#B6B6B7;
+}
+footer p:first-of-type{
+    margin-bottom:5px;
 }
